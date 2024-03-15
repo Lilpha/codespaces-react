@@ -4,12 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import Libaray from './chapter_03/:ibrary';
+import CommentList from './chapter_05/Comment_List';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Libaray />
+    <CommentList />
   </React.StrictMode>
 );
 
