@@ -5,11 +5,12 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 import ImageList from './Copy/ImageList'
+import MainContainer from './Copy/MainContainer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ImageList/>
+    <MainContainer/>
   </React.StrictMode>
 );
 
