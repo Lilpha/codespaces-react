@@ -9,7 +9,8 @@ const styles = {
         borderRadius : 16,
     },
     image:{
-        textAligin:"center"
+        textAligin:"center",
+        borderRadius : 16
     },
     price: {
         color : "black",
@@ -24,8 +25,8 @@ const styles = {
 function ImageHolder(props){
     return(
             <div style={styles.wrapper}>
-                <div  style={styles.image} >
-                    <img src={props.image} alt="image"/>
+                <div>
+                    <img style={styles.image}  src={props.image} alt="image"/>
                 </div>
                 <h3 style={styles.name}> {props.name} </h3>
                 <div style={styles.detail}> {props.detail} </div>
