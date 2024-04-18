@@ -4,12 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import NotificationList from './chapter_06/NotificationList';
+import ImageList from './Copy/ImageList'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <NotificationList />
+    <ImageList/>
   </React.StrictMode>
 );
 
