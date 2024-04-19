@@ -1,7 +1,7 @@
 import React from "react";
 import NavIcons from './NavIcons';
 
-const content = [
+const list = [
     {
         image : 'https://a0.muscache.com/pictures/10ce1091-c854-40f3-a2fb-defc2995bcaf.jpg',
         text : "한적한 해변"
@@ -30,11 +30,16 @@ const content = [
 ]
 
 function NavBar(props){
-<div>
-    {list.map((content)=> {
-        return (
-            <NavIcons image={content.image} text={content.text}/>
-        );
-    })}
-    </div>
+    return(
+        <div>
+        {list.map((content)=> {
+            return (
+                <NavIcons image={content.image} text={content.text}/>
+            );
+        })}
+        </div>
+    )
 }
+
+
+export default NavBar;
