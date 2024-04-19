@@ -1,13 +1,14 @@
 import React from "react";
-import ImageList from './ImageList'
 import NavBar from './NavBar';
+import ImageList from './ImageList'
 
 function MainContainer(props){
     return(
         <div>
-            <NavBar/>
-            <ImageList/>
+        <NavBar/>
+        <ImageList/>
         </div>
+        
     );
 
 }

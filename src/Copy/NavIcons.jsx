@@ -2,21 +2,26 @@ import React from "react";
 
 const styles = {
     wrapper:{
-        width:'20px',
-        height:'20px'
+        display:'inline-block',
+        justifyContent: 'center',
+        aliginItems:'center'
     },
     images : {
         width: '15px',
         height: '15px',
-        
+    },
+    text:{
+        fontSize : '10px'
     }
 }
 
 function NavIcons(props) {
     return(
         <div style={styles.wrapper}>
-        <img style={styles.image}  src={props.image} alt="image"/>
-        <span>{props.text}</span>
+        <img style={styles.images}  src={props.image} alt="image"/>
+        <div style={styles.text}>{props.text}</div>
         </div>
     );
 }
+
+export default NavIcons;
