@@ -5,6 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  @font-face {
+    font-family: 'NanumGothic';
+    font-style: normal;
+    src: url("/fonts/NanumGothic/otf") format('truetype')
+  }
 }
 
 code {
