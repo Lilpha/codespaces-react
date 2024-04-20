@@ -2,15 +2,18 @@ import React from "react"
 
 const styles = {
     wrapper :{
-        width:750 ,
+        width:'20vw' ,
         margin : 8,
         padding : 8,
         border : "1px solid grey",
         borderRadius : 16,
+        display:'inline-block'
     },
     image:{
         textAligin:"center",
-        borderRadius : 16
+        borderRadius : 16,
+        width : '19vw',
+        marginLeft:'5px'
     },
     price: {
         color : "black",
