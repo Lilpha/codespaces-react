@@ -6,11 +6,14 @@ import reportWebVitals from './reportWebVitals';
 
 import ImageList from './Copy/ImageList'
 import MainContainer from './Copy/MainContainer';
+import KakaoMap from './Copy/KakaoMap'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    
     <MainContainer/>
+    <KakaoMap/>
   </React.StrictMode>
 );
 
