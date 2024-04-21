@@ -4,14 +4,15 @@ const styles = {
     wrapper:{
         display:'inline-block',
         justifyContent: 'center',
-        aliginItems:'center'
+        textAligin :'center'
     },
     images : {
-        width: '15px',
-        height: '15px',
+        width: '25px',
+        height: '25px',
+    
     },
     text:{
-        fontSize : '10px'
+        fontSize : '20px',
     }
 }
 
