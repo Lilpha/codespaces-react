@@ -8,13 +8,15 @@ import ImageList from './Copy/ImageList'
 import MainContainer from './Copy/MainContainer';
 import KakaoMap from './Copy/KakaoMap'
 
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    
-    <MainContainer/>
-    <KakaoMap/>
-  </React.StrictMode>
+      <div style={{display:'flex'}}>
+        <MainContainer/>
+        <KakaoMap/>
+      </div>
+    </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
