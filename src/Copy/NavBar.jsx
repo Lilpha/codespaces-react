@@ -31,7 +31,7 @@ const list = [
 
 function NavBar(props){
     return(
-        <div>
+        <div style={{display:'flex', justifyContent:'space-around'}}>
         {list.map((content)=> {
             return (
                 <NavIcons image={content.image} text={content.text}/>
