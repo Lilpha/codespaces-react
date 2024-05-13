@@ -2,9 +2,10 @@ import React from "react";
 
 const styles = {
     wrapper:{
-        display:'inline-block',
+        display:'flex',
+        flexDirection:'column',
         justifyContent: 'center',
-        textAligin :'center'
+        alignItems :'center'
     },
     images : {
         width: '25px',
