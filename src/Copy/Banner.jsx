@@ -37,7 +37,7 @@ function Banner(props) {
       </div>
       <div style={styles.flexItems}>
         <div style={styles.options}>
-          <div style={styles.divText}>홍대입구</div>|<div style={styles.divText}>언제든 일주일</div>|<div style={styles.divText}>게스트 추가</div>
+          <div style={styles.divText}>청량리역</div>|<div style={styles.divText}>언제든 일주일</div>|<div style={styles.divText}>게스트 추가</div>
         </div>
       </div>
 
