@@ -1,4 +1,6 @@
 import React from "react"
+import { Map } from "react-kakao-maps-sdk"
+import useKakaoLoader from "./useKakaoLoader"
 
 const styles = {
     wrapper :{

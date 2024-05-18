@@ -6,6 +6,7 @@ const styles = {
 }
 
 function MainContainer(props){
+
     return(
         <div style={{width:'50vw'}}>
         <ImageList/>

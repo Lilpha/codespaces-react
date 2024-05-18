@@ -3,6 +3,10 @@ import NavIcons from './NavIcons';
 
 const list = [
     {
+        image:'https://a0.muscache.com/pictures/b887040f-0968-4174-9a4f-2d41f8728248.jpg',
+        text:'검색결과'
+    },
+    {
         image : 'https://a0.muscache.com/pictures/10ce1091-c854-40f3-a2fb-defc2995bcaf.jpg',
         text : "한적한 해변"
     },
