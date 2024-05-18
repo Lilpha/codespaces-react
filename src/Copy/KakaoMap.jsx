@@ -10,6 +10,16 @@ const styles = {
 export default function BasicMap() {
   useKakaoLoader()
 
+var iwContent = '<d-iv style="padding:5px;">Hello World!</div>', 
+    iwPosition = new kakao.maps.LatLng(33.450701, 126.570667),
+    iwRemoveable = true;
+var infowindow = new kakao.maps.InfoWindow({
+    map: map,
+    position : iwPosition, 
+    content : iwContent,
+    removable : iwRemoveable
+});
+
   return (
     <Map // 지도를 표시할 Container
       id="map"
