@@ -1,6 +1,8 @@
 import { Map, MapInfoWindow } from "react-kakao-maps-sdk"
 import ImageMarker from './ImageMarker'
 
+import list from './ImageMarker';
+
 import useKakaoLoader from "./useKakaoLoader"
 
 const styles = {
@@ -9,9 +11,11 @@ const styles = {
   height: "90vh",
 }
 
-var lat = '33.450701';
-var lng ='130.570667';
+const lati = list[0].lat
+const lngi = list[0].lng
+const name = list[0].name
 
+console.log (lati, lngi, name)
 
 export default function BasicMap() {
   useKakaoLoader()
@@ -26,7 +30,10 @@ export default function BasicMap() {
       style={{height :styles.height,width: styles.width}}
       level={3} // 지도의 확대 레벨
     >
-      <ImageMarker/>
+      <MapInfoWindow position={{ lat: lati, lng: lngi }}removable={true}>
+        <div style={{ padding: "5px", color: "#000" }}>Hello World!</div>
+      </MapInfoWindow>
+      
   </Map>  
 )
 }
