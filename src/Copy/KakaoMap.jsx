@@ -35,8 +35,9 @@ export default function BasicMap() {
     >
       {
         list.map(content =>{
+          {console.log(content)}
           <MapInfoWindow position={{ lat: content.lat, lng: content.lng }}removable={true}>
-          <div style={{ padding: "5px", color: "#000" }}>content.name</div>
+          <div style={{ padding: "5px", color: "#000" }}>{content.name}</div>
         </MapInfoWindow>
         })
       }
