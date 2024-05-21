@@ -11,12 +11,15 @@ const styles = {
   height: "90vh",
 }
 
+{
+  /*
 const lati = list[0].lat
 const lngi = list[0].lng
 const name = list[0].name
 
 console.log (lati, lngi, name)
-
+*/
+}
 export default function BasicMap() {
   useKakaoLoader()
   return (
@@ -30,9 +33,14 @@ export default function BasicMap() {
       style={{height :styles.height,width: styles.width}}
       level={3} // 지도의 확대 레벨
     >
-      <MapInfoWindow position={{ lat: lati, lng: lngi }}removable={true}>
-        <div style={{ padding: "5px", color: "#000" }}>Hello World!</div>
-      </MapInfoWindow>
+      {
+        list.map(content =>{
+          <MapInfoWindow position={{ lat: content.lat, lng: content.lng }}removable={true}>
+          <div style={{ padding: "5px", color: "#000" }}>content.name</div>
+        </MapInfoWindow>
+        })
+      }
+  
       
   </Map>  
 )
