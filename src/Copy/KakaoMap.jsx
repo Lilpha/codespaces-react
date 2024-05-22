@@ -31,13 +31,14 @@ export default function BasicMap() {
         lng: 126.570667,
       }}
       style={{height :styles.height,width: styles.width}}
-      level={3} // 지도의 확대 레벨
+      level={20} // 지도의 확대 레벨
     >
       {
+        
         list.map(content =>{
-          {console.log(content)}
+          {console.log(content.lat, content.lng)}
           <MapInfoWindow position={{ lat: content.lat, lng: content.lng }}removable={true}>
-          <div style={{ padding: "5px", color: "#000" }}>{content.name}</div>
+          <div style={{ padding: "5px", color: "#000" }}>sampleText</div>
         </MapInfoWindow>
         })
       }

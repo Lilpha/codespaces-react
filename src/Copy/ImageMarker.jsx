@@ -4,14 +4,8 @@ import { render } from "@testing-library/react";
 
 export const list =[
     {
-        name:'name입니다.',      
         lat:'33.450701',
         lng:'126.570667'
-    } ,
-    {
-        name:'1234name입니다.',      
-        lat:'34.450701',
-        lng:'1123.570667'
     } 
 ];
 
