@@ -8,8 +8,8 @@ const list =[
         name : "연희동",
         detail : "New 핫플레이스  연희동! 40년 역사의 여관을 새롭게 리모델링하여 깨끗하고 쾌적한 호텔형 에어비엔비 운영중.",
         price : "62,000",
-        lat:'37 32 30.6',
-        lng:'126 56 52.1'
+        lat:'37.32306',
+        lng:'126.56521'
     },
     {
         image : "https://a0.muscache.com/im/pictures/hosting/Hosting-1128902010827640927/original/60b308eb-1d33-431d-9b2a-73a692152cc5.jpeg?im_w=720",
