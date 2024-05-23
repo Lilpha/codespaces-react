@@ -12,13 +12,12 @@ const styles = {
 }
 
 {
-  /*
-const lati = list[0].lat
-const lngi = list[0].lng
-const name = list[0].name
+
+var lati = list[0].lat
+var lngi = list[0].lng
+var name = list[0].name
 
 console.log (lati, lngi, name)
-*/
 }
 export default function BasicMap() {
   useKakaoLoader()
@@ -34,15 +33,23 @@ export default function BasicMap() {
       level={20} // 지도의 확대 레벨
     >
       {
-        
-        list.map(content =>{
-          {console.log(content.lat, content.lng)}
-          <MapInfoWindow position={{ lat: content.lat, lng: content.lng }}removable={true}>
-          <div style={{ padding: "5px", color: "#000" }}>sampleText</div>
-        </MapInfoWindow>
-        })
+        list.map(content=>(
+          <MapInfoWindow 
+            key={content.id} 
+            position={{ lat: content.lat, lng: content.lng }} 
+            removable={true}
+          >
+            <div style={{ padding: "5px", color: "#000" }}>
+              {content.info} {/* 동적으로 정보를 보여주도록 수정 */}
+            </div>
+          </MapInfoWindow>
+        ))
       }
-  
+      {/* 
+       <MapInfoWindow position={{ lat: lati, lng: lngi }}removable={true}>
+        <div style={{ padding: "5px", color: "#000" }}>Hello World!</div>
+      </MapInfoWindow>
+  */}
       
   </Map>  
 )
