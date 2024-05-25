@@ -11,11 +11,14 @@ const styles = {
   height: "90vh",
 }
 
+
+
+
 {
 
-var lati = list[0].lat
-var lngi = list[0].lng
-var name = list[0].name
+// var lati = list[0].lat
+// var lngi = list[0].lng
+// var name = list[0].name
 
 console.log (lati, lngi, name)
 }

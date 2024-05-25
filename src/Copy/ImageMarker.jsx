@@ -12,7 +12,12 @@ export const list =[
         lat:'33.450701',
         lng:'126.570667',
         info : "test 2"
-    } 
+    },
+    {
+        lat:'37.5418281',
+        lng:'126.948357',
+        info:'text3'
+    }
 ];
 
 
