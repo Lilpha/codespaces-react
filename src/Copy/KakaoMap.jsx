@@ -20,7 +20,7 @@ const styles = {
 // var lngi = list[0].lng
 // var name = list[0].name
 
-console.log (lati, lngi, name)
+//console.log (lati, lngi, name)
 }
 export default function BasicMap() {
   useKakaoLoader()
