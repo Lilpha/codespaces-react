@@ -13,12 +13,13 @@ export const list =[
         lng:'126.570667',
         info : "test 1"
     },
-    {
+    {   url:'https://www.google.co.kr/maps/place/%EC%86%8D%EC%B4%88%EB%93%B1%EB%8C%80/data=!4m6!3m5!1s0x5fd8bc0e94bdde21:0x9713df8d33326159!8m2!3d38.2136895!4d128.5999722!16s%2Fg%2F1tdvk045?hl=ko&entry=ttu',
         lat:'33.450701',
         lng:'126.570667',
         info : "test 2"
     },
     {
+        url : 'https://www.google.co.kr/maps/place/%EC%A0%9C%EC%9E%84%EC%8A%A4%EB%B8%94%EB%A3%A8/data=!4m9!3m8!1s0x5fd8bc7470d7f9a9:0x766ad580a9144668!5m2!4m1!1i2!8m2!3d38.207675!4d128.5933513!16s%2Fg%2F1pp2vcqk1?hl=ko&entry=ttu',
         lat:'37.5418281',
         lng:'126.948357',
         info:'text3'
