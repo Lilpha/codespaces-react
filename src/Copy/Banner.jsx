@@ -1,4 +1,6 @@
 import React from "react";
+import {useRef} from "react";
+
 
 const styles = {
   wrapper: {
@@ -23,6 +25,13 @@ const styles = {
     padding:'5px'
   }
 };
+
+function adminOnclick(){
+  console.log('adminBtn has been clicked')
+  /*버튼을 클릭하게 되면 중간에 창이 하나 생성되고.
+  구글맵 url이랑 이름. 사진정도를 넣게 되면 ImageMaker에 들어가서 새로 생성되면 좋겠는데.*/
+}
+
 function Banner(props) {
   return (
     <div style={styles.wrapper}>
@@ -61,6 +70,9 @@ function Banner(props) {
             alt="userIcon"
           />
         </div>
+        <button onClick={adminOnclick}>
+          Admin
+        </button>
       </div>
     </div>
   );
