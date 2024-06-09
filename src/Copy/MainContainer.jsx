@@ -1,20 +1,27 @@
 import React from "react";
-import ImageList from './ImageList'
+import ImageList from "./ImageList";
+
+import Badge from "react-bootstrap/Badge";
+import Button from "react-bootstrap/Button";
 
 const styles = {
-    inlineElem :{display:'inline-block'}
+  inlineElem: { display: "inline-block" },
+};
+
+function MainContainer(props) {
+  return (
+    <div style={{ width: "50vw" }}>
+      <ImageList />
+      <div>
+        <h1>
+          Example heading
+          <Badge bg="secondary" as={Button}>
+            New
+          </Badge>
+        </h1>
+      </div>
+    </div>
+  );
 }
-
-function MainContainer(props){
-
-    return(
-        <div style={{width:'50vw'}}>
-        <ImageList/>
-        </div>
-        
-    );
-
-}
-
 
 export default MainContainer;
