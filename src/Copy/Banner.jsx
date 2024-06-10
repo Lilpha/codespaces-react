@@ -1,7 +1,10 @@
 import React from "react";
 import {useRef} from "react";
+import Card from 'react-bootstrap/Card';
+import Badge from "react-bootstrap/Badge";
+import Button from "react-bootstrap/Button";
 
-
+//https://velog.io/@moolbum/%EC%B2%B4%ED%81%AC%ED%95%9C%EA%B2%83-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EB%A0%8C%EB%8D%94%ED%95%98%EA%B8%B0
 const styles = {
   wrapper: {
     margin: "20px",
@@ -26,10 +29,23 @@ const styles = {
   }
 };
 
-function adminOnclick(){
+function adminOnClick(){
   console.log('adminBtn has been clicked')
   /*버튼을 클릭하게 되면 중간에 창이 하나 생성되고.
   구글맵 url이랑 이름. 사진정도를 넣게 되면 ImageMaker에 들어가서 새로 생성되면 좋겠는데.*/
+  return(
+    <Card style={{ width: '18rem' }}>
+    <Card.Img variant="top" src="holder.js/100px180" />
+    <Card.Body>
+      <Card.Title>Card Title</Card.Title>
+      <Card.Text>
+        Some quick example text to build on the card title and make up the
+        bulk of the card's content.
+      </Card.Text>
+      <Button variant="primary">Go somewhere</Button>
+    </Card.Body>
+  </Card>
+  )
 }
 
 function Banner(props) {
@@ -69,10 +85,10 @@ function Banner(props) {
             src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png"
             alt="userIcon"
           />
-        </div>
-        <button onClick={adminOnclick}>
-          Admin
-        </button>
+        </div>        
+        <Badge bg="secondary" as={Button} onClick={adminOnClick}>
+            Admin
+          </Badge>
       </div>
     </div>
   );

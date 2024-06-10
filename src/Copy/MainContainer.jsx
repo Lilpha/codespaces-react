@@ -13,12 +13,9 @@ function MainContainer(props) {
     <div style={{ width: "50vw" }}>
       <ImageList />
       <div>
-        <h1>
-          Example heading
           <Badge bg="secondary" as={Button}>
             New
           </Badge>
-        </h1>
       </div>
     </div>
   );
