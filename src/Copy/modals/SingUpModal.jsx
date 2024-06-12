@@ -1,5 +1,5 @@
 import React from 'react'
-import {Modal, Button} from 'react-bootstrap'
+import {Modal, Button, Form} from 'react-bootstrap'
 
 const SingUpModal = ({show,onHide}) => {
   return (
@@ -12,20 +12,32 @@ const SingUpModal = ({show,onHide}) => {
   >
     <Modal.Header closeButton>
       <Modal.Title id="contained-modal-title-vcenter">
-        Modal heading
+        관리자 권한
       </Modal.Title>
     </Modal.Header>
     <Modal.Body>
-      <h4>Centered Modal</h4>
-      <p>
-        Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
-        dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
-        consectetur ac, vestibulum at eros.
-      </p>
+    <Form>
+      <Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Label>숙소 이름</Form.Label>
+        <Form.Control type="email" placeholder="숙소 이름" />
+        <Form.Text className="text-muted">
+          방 주인이 원하는 이름을 입력해 주세요.
+        </Form.Text>
+      </Form.Group>
+
+      <Form.Group className="mb-3" controlId="formBasicPassword">
+        <Form.Label>관리 비밀번호</Form.Label>
+        <Form.Control type="password" placeholder="Password" />
+      </Form.Group>
+      <Form.Group className="mb-3" controlId="formBasicCheckbox">
+        <Form.Check type="checkbox" label="Check me out" />
+      </Form.Group>
+     </Form>
     </Modal.Body>
     <Modal.Footer>
-      <Button onClick={onHide}>Close</Button>
-    </Modal.Footer>
+    <Button variant="primary" type="submit">
+        등록
+      </Button>   </Modal.Footer>
   </Modal>
   )
 }
