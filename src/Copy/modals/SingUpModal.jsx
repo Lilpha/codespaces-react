@@ -19,7 +19,7 @@ const SingUpModal = ({show,onHide}) => {
     <Form>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>숙소 이름</Form.Label>
-        <Form.Control type="email" placeholder="숙소 이름" />
+        <Form.Control type="text" placeholder="숙소 이름" />
         <Form.Text className="text-muted">
           방 주인이 원하는 이름을 입력해 주세요.
         </Form.Text>
@@ -29,13 +29,10 @@ const SingUpModal = ({show,onHide}) => {
         <Form.Label>관리 비밀번호</Form.Label>
         <Form.Control type="password" placeholder="Password" />
       </Form.Group>
-      <Form.Group className="mb-3" controlId="formBasicCheckbox">
-        <Form.Check type="checkbox" label="Check me out" />
-      </Form.Group>
      </Form>
     </Modal.Body>
     <Modal.Footer>
-    <Button variant="primary" type="submit">
+    <Button variant="primary" type="button">
         등록
       </Button>   </Modal.Footer>
   </Modal>
