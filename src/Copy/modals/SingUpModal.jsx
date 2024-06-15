@@ -19,7 +19,7 @@ const SingUpModal = ({show,onHide}) => {
     <Form>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>숙소 이름</Form.Label>
-        <Form.Control type="text" placeholder="숙소 이름" />
+        <Form.Control type="text" placeholder="Lazy People" />
         <Form.Text className="text-muted">
           방 주인이 원하는 이름을 입력해 주세요.
         </Form.Text>
@@ -34,7 +34,8 @@ const SingUpModal = ({show,onHide}) => {
     <Modal.Footer>
     <Button variant="primary" type="button">
         등록
-      </Button>   </Modal.Footer>
+      </Button>
+     </Modal.Footer>
   </Modal>
   )
 }
