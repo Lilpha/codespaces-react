@@ -3,7 +3,8 @@ import {useRef} from "react";
 import Card from 'react-bootstrap/Card';
 import Badge from "react-bootstrap/Badge";
 import Button from "react-bootstrap/Button";
-import SingUpModal from "./modals/SingUpModal";
+import SingUpModal from "./bootstrap/SingUpModal";
+import { ButtonGroup } from "react-bootstrap";
 
 //https://velog.io/@moolbum/%EC%B2%B4%ED%81%AC%ED%95%9C%EA%B2%83-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EB%A0%8C%EB%8D%94%ED%95%98%EA%B8%B0
 const styles = {
@@ -49,7 +50,9 @@ const [singUpModalOn, setSignModalOn] = useState(false);
       </div>
       <div style={styles.flexItems}>
         <div style={styles.options}>
-          <div style={styles.divText}>청량리역</div>|<div style={styles.divText}>언제든 일주일</div>|<div style={styles.divText}>게스트 추가</div>
+      <Button variant="secondary">청량리역</Button>
+      <Button variant="secondary">언제든</Button>
+      <Button variant="secondary">1명</Button>
         </div>
       </div>
 
