@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 
 import ImageList from "./ImageList";
-import SingUpModal from "./modals/SingUpModal";
+import SingUpModal from "./bootstrap/SingUpModal";
 
 
 import Badge from "react-bootstrap/Badge";
