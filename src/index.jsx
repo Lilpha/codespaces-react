@@ -19,12 +19,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Banner/>
-    <NavBar/>
-      <div style={{display:'flex'}}>
-        <MainContainer/>
-        <KakaoMap/>
-      </div>
-    </React.StrictMode>
+    <KakaoMap/>
+  </React.StrictMode>
 );
 
 reportWebVitals();

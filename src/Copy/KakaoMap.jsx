@@ -7,8 +7,8 @@ import useKakaoLoader from "./useKakaoLoader"
 
 const styles = {
   inlineElem :{display:'inline-block'},
-  width: "50vw",
-  height: "90vh",
+  width: "100vw",
+  height: "100vh",
 }
 
 
