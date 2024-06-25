@@ -48,47 +48,10 @@ const [singUpModalOn, setSignModalOn] = useState(false);
     
     <div style={styles.wrapper}>
     <SingUpModal show={singUpModalOn} onHide={ ()=> setSignModalOn(false)}/>
-      <div style={styles.flexItems}>
-        <img
-          style={styles.image}
-          src={
-            "https://cdn.icon-icons.com/icons2/2699/PNG/512/airbnb_logo_icon_170605.png"
-          }
-          alt="Airbnb Logo"
-        />
-      </div>
-      <div style={styles.flexItems}>
-        <div style={styles.options}>
-      <Button variant="secondary" onClick={handleEvent}>청량리역</Button>
-      <Button variant="secondary">언제든</Button>
-      <Button variant="secondary">1명</Button>
-      <div>{content}</div>
-        </div>
-      </div>
-
-      <div style={styles.flexItems}>
-        <div style={styles.divText}>당신의 공간을 에어비앤비하세요.</div>
-        <img
-          style={styles.image}
-          src="https://png.pngtree.com/png-clipart/20230418/original/pngtree-globe-line-icon-png-image_9065393.png"
-          alt="global"
-        />
-        <div style={styles.options}>
-          <img
-            style={styles.image}
-            src="https://images.squarespace-cdn.com/content/v1/6537844b38646215677c2855/47912620-72f1-44a7-ba59-9ec6e03c03d4/hamburger+menu.png"
-            alt="hamburgerIcon"
-          />
-          blank
-          <img
-            style={styles.image}
-            src="https://cdn-icons-png.flaticon.com/512/1077/1077114.png"
-            alt="userIcon"
-          />
-        </div>                
+    
+                
       <Button variant="primary" onClick={() => setSignModalOn(true)}>Admin</Button>
       </div>
-    </div>
   );
 }
 
