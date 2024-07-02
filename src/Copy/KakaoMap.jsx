@@ -14,14 +14,6 @@ const styles = {
 
 
 
-{
-
-// var lati = list[0].lat
-// var lngi = list[0].lng
-// var name = list[0].name
-
-//console.log (lati, lngi, name)
-}
 export default function BasicMap() {
   useKakaoLoader()
   return (
@@ -48,11 +40,7 @@ export default function BasicMap() {
           </MapInfoWindow>
         ))
       }
-      {/* 
-       <MapInfoWindow position={{ lat: lati, lng: lngi }}removable={true}>
-        <div style={{ padding: "5px", color: "#000" }}>Hello World!</div>
-      </MapInfoWindow>
-  */}
+      
       
   </Map>  
 )
