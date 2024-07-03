@@ -87,6 +87,7 @@ const [singUpModalOn, setSignModalOn] = useState(false);
         </div>                
       <Button variant="primary" onClick={() => setSignModalOn(true)}>Admin</Button>
       </div>
+      </div>
   );
 }
 
