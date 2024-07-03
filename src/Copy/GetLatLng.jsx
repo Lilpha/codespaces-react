@@ -3,8 +3,9 @@ import React, {useEffect} from "react"
 
 
 function GetLatLng(props) {
+    console.log(props)
     var pattern = /!3d([\d.]+)!4d([\d.]+)/;
-    var match = props.match(pattern);
+    var match = props[5].match(pattern);
 
     if (match) {
         var latitude = parseFloat(match[1]);
@@ -24,7 +25,7 @@ function GetLatLng(props) {
     return(
         null
     )
-    
+ return null;   
 }
 
 export default GetLatLng;

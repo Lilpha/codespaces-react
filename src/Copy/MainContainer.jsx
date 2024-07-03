@@ -2,8 +2,6 @@
 
 import React, {useState} from "react";
 
-import exifr from "exifr";
-
 import ImageList from "./ImageList";
 import SingUpModal from "./bootstrap/SingUpModal";
 
@@ -15,7 +13,7 @@ const styles = {
   inlineElem: { display: "inline-block" },
 };
 
-
+/*
 const exifData = './sampleImage/20230308_142752.jpg'
 
 
@@ -36,7 +34,7 @@ const ImageWithExif = ({ imageUrl }) => {
   }, [imageUrl]);
 }
 
-
+*/
 function MainContainer(props) {
 //const [singUpModalOn, setSignModalOn] = useState(false);
 // exifr reads the file from disk, only a few hundred bytes.
