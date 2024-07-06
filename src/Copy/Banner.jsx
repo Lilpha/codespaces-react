@@ -6,7 +6,7 @@ import Button from "react-bootstrap/Button";
 import SingUpModal from "./bootstrap/SingUpModal";
 import StaticModal from "./bootstrap/StaticModal";
 import { ButtonGroup } from "react-bootstrap";
-
+//https://www.naver.com/
 //https://velog.io/@moolbum/%EC%B2%B4%ED%81%AC%ED%95%9C%EA%B2%83-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%EB%A0%8C%EB%8D%94%ED%95%98%EA%B8%B0
 const styles = {
   wrapper: {
