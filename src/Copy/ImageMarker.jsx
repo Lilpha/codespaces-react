@@ -4,13 +4,13 @@ import { render } from "@testing-library/react";
 import GetLatLng from "./GetLatLng"
 
 
-console.log(decodeURIComponent(url[5]))
+//console.log(decodeURIComponent(url[5]))
 
 export const list =[
     {
         img:'https://a0.muscache.com/im/pictures/17af19bc-eb72-417c-8824-fbb44a06218b.jpg?im_w=720',
         url:'https://www.google.co.kr/maps/place/%EC%9E%90%EC%9E%91%EB%8F%84%ED%95%B4%EB%B3%80/data=!4m6!3m5!1s0x5fd894db4b106483:0xee28a83305d68928!8m2!3d38.3087232!4d128.5427113!16s%2Fg%2F119w1h5c_?hl=ko&entry=ttu',
-        lat: GetLatLng(this.url),
+        lat:'33.450701',
         lng:'126.570667',
         info : "test 1"
     },
