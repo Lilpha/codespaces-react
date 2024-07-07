@@ -1,11 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import Badge from "react-bootstrap/Badge";
-import Button from "react-bootstrap/Button";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import ImageList from './Copy/ImageList'
@@ -19,8 +16,11 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Banner/>
+    <div>
+    <ImageList/>
     <KakaoMap/>
-  </React.StrictMode>
+    </div>
+    </React.StrictMode>
 );
 
 reportWebVitals();
