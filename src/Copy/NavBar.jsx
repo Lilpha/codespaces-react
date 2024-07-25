@@ -28,7 +28,7 @@ const list = [
     },
     {
         image:"https://a0.muscache.com/pictures/6b639c8d-cf9b-41fb-91a0-91af9d7677cc.jpg",
-        text:"뭐더라"
+        text:"ETCCCC"
     },
 
 ]
